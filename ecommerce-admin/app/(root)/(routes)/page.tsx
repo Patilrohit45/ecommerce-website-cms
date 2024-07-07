@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { useStoreModal } from '@/hooks/use-store-modal';
+import exp from 'constants';
 
 export default function SetupPage() {
   const onOpen = useStoreModal((state) => state.onOpen);
@@ -14,9 +15,6 @@ export default function SetupPage() {
   },[isOpen,onOpen]);
  
 
-  return (
-    <div className="p-4">
-     Root Page
-    </div>
-  );
+  return null;
 }
+export default SetupPage;
